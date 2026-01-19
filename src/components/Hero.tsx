@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="absolute inset-0 gradient-primary rounded-[2rem] transform rotate-3 opacity-20"></div>
               <div className="relative bg-primary/10 rounded-[2rem] p-8 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=700&fit=crop"
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=700&fit=crop"
                   alt={t.hero.imageAlt}
                   className="w-full h-auto rounded-2xl shadow-soft"
                 />
