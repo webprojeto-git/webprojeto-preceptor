@@ -13,12 +13,12 @@ const Stats = () => {
     <section className="py-12 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-          {stats.map((stat, index) => (
+            {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-4xl md:text-5xl font-extrabold text-primary mb-2">
+              <div className="font-satoshi text-4xl md:text-5xl font-black text-primary mb-2">
                 {stat.value}
               </div>
-              <div className="text-muted-foreground font-medium">
+              <div className="font-sans text-muted-foreground font-medium">
                 {stat.label}
               </div>
             </div>

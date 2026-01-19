@@ -21,7 +21,7 @@ const Header = () => {
           <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-lg">P</span>
           </div>
-          <span className="font-bold text-xl text-foreground">Preceptor.iA</span>
+          <span className="font-satoshi font-bold text-xl text-foreground">Preceptor.iA</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

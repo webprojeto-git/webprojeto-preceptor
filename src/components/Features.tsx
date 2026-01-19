@@ -10,10 +10,10 @@ const Features = () => {
     <section id="funcionalidades" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t.features.title}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-muted-foreground max-w-2xl mx-auto">
             {t.features.subtitle}
           </p>
         </div>
@@ -29,10 +29,10 @@ const Features = () => {
                 <div className="w-14 h-14 gradient-primary rounded-xl flex items-center justify-center mb-5">
                   <Icon className="w-7 h-7 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
+                <h3 className="font-satoshi text-xl font-bold text-foreground mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="font-sans text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>

@@ -146,6 +146,46 @@ export const translations = {
       lgpd: "LGPD",
       copyright: "Todos os direitos reservados.",
     },
+    // Terms of Use
+    terms: {
+      title: "Termos de Uso",
+      backToHome: "Voltar ao início",
+      lastUpdated: "Última atualização: Janeiro de 2025",
+      sections: {
+        acceptance: {
+          title: "1. Aceitação dos Termos",
+          content: "Ao acessar e utilizar a plataforma Preceptor.iA, você concorda com estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não deverá utilizar nossos serviços. Recomendamos a leitura atenta de todas as condições aqui estabelecidas.",
+        },
+        services: {
+          title: "2. Descrição dos Serviços",
+          content: "O Preceptor.iA é uma plataforma de inteligência artificial desenvolvida para auxiliar profissionais de saúde e estudantes da área médica. Nossos serviços incluem suporte a diagnósticos, informações sobre medicamentos, geração de relatórios médicos e outras funcionalidades voltadas à otimização da rotina clínica.",
+        },
+        responsibilities: {
+          title: "3. Responsabilidades do Usuário",
+          content: "O usuário é responsável por utilizar a plataforma de forma ética e profissional, garantindo que as informações obtidas sejam utilizadas como suporte à decisão clínica, e não como substituição ao julgamento profissional. O usuário deve manter suas credenciais de acesso em sigilo e não compartilhá-las com terceiros.",
+        },
+        privacy: {
+          title: "4. Privacidade e Proteção de Dados",
+          content: "Tratamos a privacidade e a proteção de dados com seriedade absoluta. Todas as informações processadas pela plataforma são protegidas por criptografia e seguem as diretrizes da LGPD (Lei Geral de Proteção de Dados) e do GDPR (General Data Protection Regulation). Para mais informações, consulte nossa Política de Privacidade.",
+        },
+        intellectual: {
+          title: "5. Propriedade Intelectual",
+          content: "Todo o conteúdo, funcionalidades, design e tecnologia da plataforma Preceptor.iA são de propriedade exclusiva da empresa. É proibida a reprodução, distribuição ou modificação de qualquer parte da plataforma sem autorização prévia por escrito.",
+        },
+        limitations: {
+          title: "6. Limitações de Responsabilidade",
+          content: "O Preceptor.iA fornece informações com base em fontes médicas confiáveis, porém não substitui a avaliação, o diagnóstico ou o tratamento realizado por profissionais de saúde qualificados. A plataforma não se responsabiliza por decisões clínicas tomadas exclusivamente com base nas informações fornecidas pelo sistema.",
+        },
+        modifications: {
+          title: "7. Modificações dos Termos",
+          content: "Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. As alterações entrarão em vigor imediatamente após sua publicação na plataforma. O uso continuado dos serviços após as modificações constitui aceitação dos novos termos.",
+        },
+        contact: {
+          title: "8. Contato",
+          content: "Para dúvidas, sugestões ou solicitações relacionadas a estes Termos de Uso, entre em contato através do e-mail contato@preceptor-ia.com ou pelo WhatsApp disponível em nossa plataforma.",
+        },
+      },
+    },
     // Accessibility
     aria: {
       menu: "Menu",
@@ -298,6 +338,46 @@ export const translations = {
       privacyPolicy: "Privacy Policy",
       lgpd: "LGPD",
       copyright: "All rights reserved.",
+    },
+    // Terms of Use
+    terms: {
+      title: "Terms of Use",
+      backToHome: "Back to home",
+      lastUpdated: "Last updated: January 2025",
+      sections: {
+        acceptance: {
+          title: "1. Acceptance of Terms",
+          content: "By accessing and using the Preceptor.iA platform, you agree to these Terms of Use. If you do not agree with any part of these terms, you should not use our services. We recommend careful reading of all conditions established here.",
+        },
+        services: {
+          title: "2. Description of Services",
+          content: "Preceptor.iA is an artificial intelligence platform developed to assist healthcare professionals and medical students. Our services include diagnostic support, medication information, generation of medical reports, and other features aimed at optimizing clinical routine.",
+        },
+        responsibilities: {
+          title: "3. User Responsibilities",
+          content: "The user is responsible for using the platform ethically and professionally, ensuring that the information obtained is used as clinical decision support, and not as a replacement for professional judgment. The user must keep their access credentials confidential and not share them with third parties.",
+        },
+        privacy: {
+          title: "4. Privacy and Data Protection",
+          content: "We treat privacy and data protection with absolute seriousness. All information processed by the platform is protected by encryption and follows LGPD (General Data Protection Law) and GDPR (General Data Protection Regulation) guidelines. For more information, consult our Privacy Policy.",
+        },
+        intellectual: {
+          title: "5. Intellectual Property",
+          content: "All content, features, design, and technology of the Preceptor.iA platform are exclusive property of the company. Reproduction, distribution, or modification of any part of the platform without prior written authorization is prohibited.",
+        },
+        limitations: {
+          title: "6. Limitation of Liability",
+          content: "Preceptor.iA provides information based on reliable medical sources, however, it does not replace evaluation, diagnosis, or treatment performed by qualified healthcare professionals. The platform is not responsible for clinical decisions made exclusively based on the information provided by the system.",
+        },
+        modifications: {
+          title: "7. Modifications to Terms",
+          content: "We reserve the right to modify these Terms of Use at any time. Changes will take effect immediately upon publication on the platform. Continued use of the services after modifications constitutes acceptance of the new terms.",
+        },
+        contact: {
+          title: "8. Contact",
+          content: "For questions, suggestions, or requests related to these Terms of Use, please contact us via email at contato@preceptor-ia.com or through WhatsApp available on our platform.",
+        },
+      },
     },
     // Accessibility
     aria: {
