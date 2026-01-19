@@ -28,8 +28,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>('pt');
 
   useEffect(() => {
-    setLanguageState(getInitialLanguage());
+    const initialLang = getInitialLanguage();
+    setLanguageState(initialLang);
+    document.documentElement.lang = initialLang === 'pt' ? 'pt-BR' : 'en-US';
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en-US';
+  }, [language]);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);

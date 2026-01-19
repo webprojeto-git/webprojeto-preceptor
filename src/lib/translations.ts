@@ -143,7 +143,15 @@ export const translations = {
       legal: "Legal",
       termsOfUse: "Termos de Uso",
       privacyPolicy: "Política de Privacidade",
+      lgpd: "LGPD",
       copyright: "Todos os direitos reservados.",
+    },
+    // Accessibility
+    aria: {
+      menu: "Menu",
+      whatsapp: "WhatsApp",
+      email: "Email",
+      instagram: "Instagram",
     },
   },
   en: {
@@ -288,7 +296,15 @@ export const translations = {
       legal: "Legal",
       termsOfUse: "Terms of Use",
       privacyPolicy: "Privacy Policy",
+      lgpd: "LGPD",
       copyright: "All rights reserved.",
+    },
+    // Accessibility
+    aria: {
+      menu: "Menu",
+      whatsapp: "WhatsApp",
+      email: "Email",
+      instagram: "Instagram",
     },
   },
 } as const;

@@ -24,21 +24,21 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label="WhatsApp"
+                aria-label={t.aria.whatsapp}
               >
                 <MessageCircle size={20} />
               </a>
               <a
                 href="mailto:contato@preceptor-ia.com"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label="Email"
+                aria-label={t.aria.email}
               >
                 <Mail size={20} />
               </a>
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label="Instagram"
+                aria-label={t.aria.instagram}
               >
                 <Instagram size={20} />
               </a>
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-background/70 hover:text-background transition-colors">
-                  LGPD
+                  {t.footer.lgpd}
                 </a>
               </li>
             </ul>
