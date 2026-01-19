@@ -97,10 +97,22 @@
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+  }
 }
 
 @layer utilities {
   .gradient-primary {
     background: linear-gradient(135deg, hsl(220 49% 45%), hsl(220 60% 55%));
+  }
+
+  .font-satoshi {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
