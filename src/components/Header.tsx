@@ -39,7 +39,7 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-4">
           <LanguageSwitcher />
           <a
-            href="https://api.whatsapp.com/send?phone=553197664004&text=site10"
+            href="https://preceptor-ia.com/pt/assinatura"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2.5 gradient-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
@@ -74,7 +74,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://api.whatsapp.com/send?phone=553197664004&text=site10"
+              href="https://preceptor-ia.com/pt/assinatura"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex justify-center px-6 py-2.5 gradient-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
