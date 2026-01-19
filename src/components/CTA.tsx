@@ -12,10 +12,10 @@ const CTA = () => {
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
           
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+            <h2 className="font-satoshi text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
               {t.cta.title}
             </h2>
-            <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+            <p className="font-sans text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
               {t.cta.description}
             </p>
             
@@ -32,7 +32,7 @@ const CTA = () => {
               </a>
             </div>
             
-            <p className="text-primary-foreground/70 text-sm mt-6">
+            <p className="font-sans text-primary-foreground/70 text-sm mt-6">
               {t.cta.disclaimer}
             </p>
           </div>

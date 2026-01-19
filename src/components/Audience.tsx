@@ -8,10 +8,10 @@ const Audience = () => {
     <section id="para-quem" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t.audience.title}
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="font-sans text-xl text-muted-foreground">
             {t.audience.subtitle}
           </p>
         </div>
@@ -27,17 +27,17 @@ const Audience = () => {
               />
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-2">
+              <h3 className="font-satoshi text-2xl font-bold text-foreground mb-2">
                 {t.audience.professional.title}
               </h3>
-              <p className="text-muted-foreground mb-6">{t.audience.professional.subtitle}</p>
+              <p className="font-sans text-muted-foreground mb-6">{t.audience.professional.subtitle}</p>
               <ul className="space-y-3">
                 {t.audience.professional.benefits.map((benefit, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-primary-foreground" />
                     </div>
-                    <span className="text-foreground">{benefit}</span>
+                    <span className="font-sans text-foreground">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -54,17 +54,17 @@ const Audience = () => {
               />
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-2">
+              <h3 className="font-satoshi text-2xl font-bold text-foreground mb-2">
                 {t.audience.student.title}
               </h3>
-              <p className="text-muted-foreground mb-6">{t.audience.student.subtitle}</p>
+              <p className="font-sans text-muted-foreground mb-6">{t.audience.student.subtitle}</p>
               <ul className="space-y-3">
                 {t.audience.student.benefits.map((benefit, index) => (
                   <li key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-primary-foreground" />
                     </div>
-                    <span className="text-foreground">{benefit}</span>
+                    <span className="font-sans text-foreground">{benefit}</span>
                   </li>
                 ))}
               </ul>

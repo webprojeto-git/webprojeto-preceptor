@@ -8,13 +8,13 @@ const Testimonials = () => {
     <section id="depoimentos" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-satoshi text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t.testimonials.title}
           </h2>
-          <h3 className="text-xl md:text-2xl font-semibold text-primary mb-2">
+          <h3 className="font-satoshi text-xl md:text-2xl font-semibold text-primary mb-2">
             {t.testimonials.subtitle}
           </h3>
-          <p className="text-muted-foreground">
+          <p className="font-sans text-muted-foreground">
             {t.testimonials.description}
           </p>
         </div>
@@ -26,7 +26,7 @@ const Testimonials = () => {
               className="bg-card p-8 rounded-2xl border border-border shadow-soft relative"
             >
               <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
-              <p className="text-foreground leading-relaxed mb-6 relative z-10">
+              <p className="font-sans text-foreground leading-relaxed mb-6 relative z-10">
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center gap-4">
@@ -36,10 +36,10 @@ const Testimonials = () => {
                   </span>
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">
+                  <div className="font-satoshi font-bold text-foreground">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="font-sans text-sm text-muted-foreground">
                     {testimonial.role}
                   </div>
                 </div>

@@ -15,7 +15,7 @@ const Hero = () => {
               <span className="text-muted-foreground">| {t.hero.badge}</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-tight mb-6">
+            <h1 className="font-satoshi text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-6">
               {t.hero.title}{" "}
               <span className="text-primary">{t.hero.titleHighlight1}</span> {t.hero.titleMiddle}{" "}
               <span className="text-primary">{t.hero.titleHighlight2}</span>
