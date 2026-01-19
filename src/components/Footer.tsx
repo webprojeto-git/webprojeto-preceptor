@@ -1,11 +1,13 @@
 import { MessageCircle, Mail, Instagram } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="py-12 bg-foreground text-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
@@ -14,8 +16,7 @@ const Footer = () => {
               <span className="font-bold text-xl">Preceptor.iA</span>
             </div>
             <p className="text-background/70 max-w-md mb-6">
-              O futuro da medicina no seu WhatsApp. Automatize prontuários, prescrições 
-              e diagnósticos com segurança e precisão.
+              {t.footer.description}
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -44,45 +45,43 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Links */}
           <div>
-            <h4 className="font-bold mb-4">Navegação</h4>
+            <h4 className="font-bold mb-4">{t.footer.navigation}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#funcionalidades" className="text-background/70 hover:text-background transition-colors">
-                  Funcionalidades
+                  {t.nav.features}
                 </a>
               </li>
               <li>
                 <a href="#sobre" className="text-background/70 hover:text-background transition-colors">
-                  Sobre
+                  {t.nav.about}
                 </a>
               </li>
               <li>
                 <a href="#para-quem" className="text-background/70 hover:text-background transition-colors">
-                  Para quem é
+                  {t.nav.audience}
                 </a>
               </li>
               <li>
                 <a href="#depoimentos" className="text-background/70 hover:text-background transition-colors">
-                  Depoimentos
+                  {t.nav.testimonials}
                 </a>
               </li>
             </ul>
           </div>
           
-          {/* Legal */}
           <div>
-            <h4 className="font-bold mb-4">Legal</h4>
+            <h4 className="font-bold mb-4">{t.footer.legal}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-background/70 hover:text-background transition-colors">
-                  Termos de Uso
+                  {t.footer.termsOfUse}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-background/70 hover:text-background transition-colors">
-                  Política de Privacidade
+                  {t.footer.privacyPolicy}
                 </a>
               </li>
               <li>
@@ -95,7 +94,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-background/10 text-center text-background/50">
-          <p>© {new Date().getFullYear()} Preceptor.iA. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Preceptor.iA. {t.footer.copyright}</p>
         </div>
       </div>
     </footer>

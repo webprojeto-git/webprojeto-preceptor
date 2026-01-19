@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navLinks = [
-    { label: "Funcionalidades", href: "#funcionalidades" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Para quem é", href: "#para-quem" },
-    { label: "Depoimentos", href: "#depoimentos" },
+    { label: t.nav.features, href: "#funcionalidades" },
+    { label: t.nav.about, href: "#sobre" },
+    { label: t.nav.audience, href: "#para-quem" },
+    { label: t.nav.testimonials, href: "#depoimentos" },
   ];
 
   return (
@@ -21,7 +24,6 @@ const Header = () => {
           <span className="font-bold text-xl text-foreground">Preceptor.iA</span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -34,16 +36,18 @@ const Header = () => {
           ))}
         </nav>
 
-        <a
-          href="https://api.whatsapp.com/send?phone=553197664004&text=site10"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex px-6 py-2.5 gradient-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
-        >
-          Assine já!
-        </a>
+        <div className="hidden md:flex items-center gap-4">
+          <LanguageSwitcher />
+          <a
+            href="https://api.whatsapp.com/send?phone=553197664004&text=site10"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 gradient-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
+          >
+            {t.nav.cta}
+          </a>
+        </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2 text-foreground"
@@ -53,10 +57,12 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <nav className="md:hidden bg-background border-b border-border py-4">
           <div className="container mx-auto px-4 flex flex-col gap-4">
+            <div className="flex justify-center pb-2">
+              <LanguageSwitcher />
+            </div>
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -73,7 +79,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="inline-flex justify-center px-6 py-2.5 gradient-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 transition-opacity"
             >
-              Assine já!
+              {t.nav.cta}
             </a>
           </div>
         </nav>

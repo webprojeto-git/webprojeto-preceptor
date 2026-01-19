@@ -1,10 +1,14 @@
-const stats = [
-  { value: "98%", label: "Taxa de satisfação" },
-  { value: "+20.000", label: "Pesquisas realizadas" },
-  { value: "+450", label: "Clientes satisfeitos" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Stats = () => {
+  const { t } = useLanguage();
+
+  const stats = [
+    { value: "98%", label: t.stats.satisfaction },
+    { value: "+20.000", label: t.stats.surveys },
+    { value: "+450", label: t.stats.clients },
+  ];
+
   return (
     <section className="py-12 bg-secondary/50">
       <div className="container mx-auto px-4">
