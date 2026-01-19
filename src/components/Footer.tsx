@@ -1,4 +1,3 @@
-import { MessageCircle, Mail, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -19,31 +18,6 @@ const Footer = () => {
             <p className="text-background/70 max-w-md mb-6 font-sans">
               {t.footer.description}
             </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://api.whatsapp.com/send?phone=553197664004&text=site10"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label={t.aria.whatsapp}
-              >
-                <MessageCircle size={20} />
-              </a>
-              <a
-                href="mailto:contato@preceptor-ia.com"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label={t.aria.email}
-              >
-                <Mail size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label={t.aria.instagram}
-              >
-                <Instagram size={20} />
-              </a>
-            </div>
           </div>
           
           <div>
