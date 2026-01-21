@@ -9,13 +9,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center mb-4">
               <img 
                 src="/logo-preceptor.png" 
                 alt="Preceptor.iA" 
                 className="h-10 w-auto"
               />
-              <span className="font-satoshi font-bold text-xl">Preceptor.iA</span>
             </div>
             <p className="text-background/70 max-w-md mb-6 font-sans">
               {t.footer.description}
