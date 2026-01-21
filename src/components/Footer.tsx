@@ -10,22 +10,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <img 
-                src="/logo-preceptor.png" 
-                alt="Preceptor.iA" 
-                className="h-10 w-auto"
-              />
+              <img src="/logo-preceptor.png" alt="Preceptor.iA" className="h-10 w-auto" />
             </div>
-            <p className="text-background/70 max-w-md mb-6 font-sans">
-              {t.footer.description}
-            </p>
+            <p className="text-background/70 max-w-md mb-6 font-sans">{t.footer.description}</p>
           </div>
-          
+
           <div>
             <h4 className="font-satoshi font-bold mb-4">{t.footer.navigation}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#funcionalidades" className="text-background/70 hover:text-background transition-colors font-sans">
+                <a
+                  href="#funcionalidades"
+                  className="text-background/70 hover:text-background transition-colors font-sans"
+                >
                   {t.nav.features}
                 </a>
               </li>
@@ -46,12 +43,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-satoshi font-bold mb-4">{t.footer.legal}</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/termos-de-uso" className="text-background/70 hover:text-background transition-colors font-sans">
+                <Link
+                  to="/termos-de-uso"
+                  className="text-background/70 hover:text-background transition-colors font-sans"
+                >
                   {t.footer.termsOfUse}
                 </Link>
               </li>
@@ -68,9 +68,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="pt-8 border-t border-background/10 text-center text-background/50">
-          <p className="font-sans">© {new Date().getFullYear()} Preceptor.iA. {t.footer.copyright}</p>
+          <p className="font-sans">
+            © {new Date().getFullYear()} Preceptor.iA. {t.footer.copyright}
+          </p>
         </div>
       </div>
     </footer>
