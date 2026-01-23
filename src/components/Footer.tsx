@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import preceptorBottomLogo from "@/assets/preceptor-bottom-logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -9,10 +10,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
-              <img src="/logo-preceptor.png" alt="Preceptor.iA" className="h-10 w-auto" />
+            <div className="flex items-center justify-center md:justify-start mb-4">
+              <img src={preceptorBottomLogo} alt="Preceptor.iA" className="h-10 w-auto" />
             </div>
-            <p className="text-background/70 max-w-md mb-6 font-sans">{t.footer.description}</p>
+            <p className="text-background/70 max-w-md mb-6 font-sans text-center md:text-left">{t.footer.description}</p>
           </div>
 
           <div>
