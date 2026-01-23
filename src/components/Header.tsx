@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
+import preceptorTopLogo from "@/assets/preceptor-top-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <img 
-            src="/logo-preceptor.png" 
+            src={preceptorTopLogo} 
             alt="Preceptor.iA" 
-            className="h-10 w-auto"
+            className="h-[60px] w-auto"
           />
         </a>
 
