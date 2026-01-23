@@ -4,7 +4,10 @@ import path from "path";
 
 // Configuração fixa para GitHub Pages
 export default defineConfig({
-  base: "/preceptor/",
+  base: "/webprojeto-preceptor/",
+  server: {
+    port: 8080
+  },
   plugins: [react()],
   resolve: {
     alias: {
