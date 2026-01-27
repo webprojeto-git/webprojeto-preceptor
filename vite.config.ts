@@ -2,11 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// Configuração fixa para GitHub Pages
 export default defineConfig({
-  base: "/webprojeto-preceptor/",
+  base: "/",
   server: {
-    port: 8080
+    port: 8080,
   },
   plugins: [react()],
   resolve: {
