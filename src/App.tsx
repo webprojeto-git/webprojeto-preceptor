@@ -10,13 +10,13 @@ import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Custom domain (preceptor.webprojeto.com.br) runs at root "/".
+// GitHub Pages with repo path runs at "/webprojeto-preceptor".
 const basename =
   typeof window !== "undefined" &&
   window.location.pathname.startsWith("/webprojeto-preceptor")
     ? "/webprojeto-preceptor"
-    : import.meta.env.PROD
-      ? "/webprojeto-preceptor"
-      : "";
+    : "";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
