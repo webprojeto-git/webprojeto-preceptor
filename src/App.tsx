@@ -10,13 +10,21 @@ import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const basename =
+  typeof window !== "undefined" &&
+  window.location.pathname.startsWith("/webprojeto-preceptor")
+    ? "/webprojeto-preceptor"
+    : import.meta.env.PROD
+      ? "/webprojeto-preceptor"
+      : "";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/webprojeto-preceptor">
+        <BrowserRouter basename={basename}>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/terms" element={<TermsOfUse />} />
